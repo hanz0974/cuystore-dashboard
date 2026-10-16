@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+admin/.env*
+data/
+node_modules/
+admin/dist/
+admin/.pnpm-store/
+admin/test-temp/
+*.log
+
+usage.json
+usage.json.tmp

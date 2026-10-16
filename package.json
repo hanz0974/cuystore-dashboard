@@ -1,0 +1,1 @@
+{"name":"telegram-9router-bot","private":true,"type":"module","scripts":{"start":"node --env-file=.env bot.mjs","check":"node --env-file=.env bot.mjs --check","test":"node --test"},"engines":{"node":">=22"}}

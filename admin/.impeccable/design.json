@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T04:40:55.3118942Z",
+  "title": "Design System: Cuystore Admin",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "primary-button",
+        "value": "0 2px 2px #143c2810",
+        "purpose": "Subtle primary-action depth."
+      },
+      {
+        "name": "notification",
+        "value": "0 8px 30px #173b2820",
+        "purpose": "Lift notifications above the header."
+      },
+      {
+        "name": "dialog",
+        "value": "0 16px 65px #12281d30",
+        "purpose": "Separate modal content from the backdrop."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 25px #14332222",
+        "purpose": "Lift transient feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-state",
+        "value": "background .15s, color .15s",
+        "purpose": "Button state feedback."
+      },
+      {
+        "name": "dialog-enter",
+        "value": "enter .18s ease-out",
+        "purpose": "Move dialogs from translateY(6px) to translateY(0)."
+      },
+      {
+        "name": "drawer",
+        "value": "transform .2s",
+        "purpose": "Mobile navigation slide."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none !important; transition: none !important; scroll-behavior: auto !important",
+        "purpose": "Applied under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1200px"
+      },
+      {
+        "name": "stacked-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "Operational daylight dashboard",
+    "overview": "White surfaces, quiet green accents, compact data, and persistent side navigation describe the implemented local demo.",
+    "keyCharacteristics": [
+      "Border-led surfaces",
+      "Compact operational hierarchy",
+      "Responsive drawer navigation",
+      "Visible keyboard focus"
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve tabular figures and readable metadata.",
+      "Do preserve focus-within on the search field.",
+      "Do respect reduced motion."
+    ],
+    "donts": [
+      "Don't apply decorative shadows to every panel.",
+      "Don't remove written status labels.",
+      "Don't imply demo data is a production integration."
+    ]
+  }
+}

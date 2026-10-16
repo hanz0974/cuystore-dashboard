@@ -1,0 +1,16 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-9router-bot
+    restart: unless-stopped
+    network_mode: host
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    environment:
+      BOT_USAGE_FILE: /app/data/usage.json
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
